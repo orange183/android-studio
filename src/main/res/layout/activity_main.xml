@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uu"
+    tools:context=".MainActivity">
+    <com.example.gobang.FallingView
+        android:id="@+id/snow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.gobang.FallingView>
+    <Button
+        android:id="@+id/start"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/buttonselector"
+        android:onClick="Start"
+        android:text="开始"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="380dp"
+        android:layout_toRightOf="@+id/start"
+        android:background="@drawable/buttonselector"
+        android:onClick="Back"
+        android:text="悔棋"
+        android:textSize="30dp"></Button>
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="380dp"
+        android:layout_toRightOf="@+id/back"
+        android:background="@drawable/buttonselector"
+        android:onClick="Restart"
+        android:text="重开"
+        android:textSize="30dp"></Button>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="34dp"></ImageView>
+
+
+    <com.example.gobang.Cheek
+        android:id="@+id/cheek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.gobang.Cheek>
+
+    <com.example.gobang.ChessBoard
+        android:id="@+id/chessboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.gobang.ChessBoard>
+
+    <SeekBar
+        android:id="@+id/sekbar"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/start"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:padding="20dp"
+        android:progressDrawable="@drawable/seekbar"
+        android:thumb="@drawable/select_seekbar"></SeekBar>
+
+
+</RelativeLayout>
+
+
+
+
